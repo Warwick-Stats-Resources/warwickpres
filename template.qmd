@@ -2,7 +2,7 @@
 title: Untitled
 format:
   warwickpres-revealjs: default
-author: EllaKaye
+author: Ella Kaye
 date: last-modified
 ---
 
@@ -14,3 +14,14 @@ date: last-modified
 
 You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
 
+# Section divide {.inverse .middle}
+
+Some more text
+
+**Some bold text**
+
+<https://ellakaye.co.uk>
+
+`Some code`
+
+# Section divide {.inverse}

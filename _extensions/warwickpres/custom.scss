@@ -1,8 +1,155 @@
 /*-- scss:defaults --*/
 
-/* TODO: Customize presentation appearance by setting SCSS variables */
-/* See https://quarto.org/docs/presentations/revealjs/themes.html#customizing-themes */
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700&display=swap);
+
+
+// fonts
+$font-family-sans-serif: Lato, Helvetica, sans-serif !default;
+$font-family-monospace: "Fira Mono", monospace;
+$headings-font-family: Lato, Helvetica, sans-serif !default;
+
+//  Warwick colors 
+$aubergine: #552D62;
+$aubergine70: #886C91; //paler
+$ruby: #9A1310;
+$ruby70: #B85A58; //paler
+$ruby50: #cd8988;
+$ruby30: #e1b8b7;
+$sky: #00407A;
+$sky80: #336695;
+$sky70: #4D79A2; //paler (70)
+$sky50: #80a0bd;
+$sky30: #b3c6d7;
+
+$gray: #393A3B;
+$gray90: #4d4e4f;
+$gray80: #616162;
+$gray70: #747576; //paler
+$gray60: #888989;
+$gray50: #9c9d9d;
+$gray40: #b0b0b1;
+$gray30: #c4c4c4;
+$gray20: #d7d8d8;
+$gray10: #ebebeb;
+$gray05: #f5f5f5;
+
+$primary:       $aubergine !default;
+
+$presentation-font-size-root: 32px;
+$code-block-font-size: .55em;
+$presentation-heading-font: Lato, Helvetica, sans-serif !default;
+//$presentation-heading-color: $ruby;
+$link-color: $sky70;
+$code-color: $ruby70;
 
 /*-- scss:rules --*/
 
-/* TODO: Provide custom CSS rules */
+// color classes
+.primary {
+  color: $primary;
+}
+
+// code
+pre.sourceCode {
+  border-radius: 0;
+  border-left-color: $gray;
+  font-size: .7em;
+}
+
+// title-slide
+
+#title-slide {
+  color: $gray05;
+}
+
+#title-slide .title {
+  font-size: 70px;
+  padding-bottom: .25em;
+}
+
+#title-slide .subtitle {
+  margin-bottom: 6rem;
+}
+
+.reveal .quarto-title-block .quarto-title-authors {
+  display: block;
+}
+
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+}
+
+// alignment and spacing
+.middle {
+  text-align: center;
+}
+
+.right {
+  text-align: right;  
+}
+
+.cell {
+  padding-bottom: 20px;
+}
+
+// headings
+.reveal h2 {
+  padding-bottom: 20px;
+  color: $ruby;
+}
+
+// sizes
+.smaller90 {
+  font-size: 90%;
+}
+
+.smaller80 {
+  font-size: 80%;
+}
+
+.smaller75 {
+  font-size: 75%;
+}
+
+.smaller70 {
+  font-size: 70%;
+}
+
+.smaller60 {
+  font-size: 60%;
+}
+
+// figure caption
+.reveal .slide figure>figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch+p.caption {
+  font-size: 0.5em;
+}
+
+// tables
+.reveal table th, .reveal table td {
+    border-bottom: 1px solid;
+    border-color: $gray20;
+}
+
+// inverse
+// with credit/thanks to Emil Hvidfeldt
+// https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
+
+.inverse {
+  color: $gray05;
+
+  h1, h2, h3 {
+    color: $gray05;
+  }
+  
+  .slide-background-content {
+    background-color: $aubergine;
+  }
+  
+  
+  
+  
+}
+
