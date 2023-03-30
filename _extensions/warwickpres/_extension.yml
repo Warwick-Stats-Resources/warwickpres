@@ -6,7 +6,7 @@ contributes:
   formats:
     revealjs:
       theme: [default, custom.scss]
-      date-format: long
-      #logo: logo.svg
+      highlight-style: warwickpres80.theme
+      slide-number: true
       title-slide-attributes:
         data-background-color: "#552D62"
