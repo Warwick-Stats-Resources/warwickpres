@@ -1,25 +1,12 @@
 ---
 title: A University of Warwick Themed Presentation
+subtitle: TODO - maybe add Warwick logo to title page?
 author: Your Name
 date: last-modified
 date-format: long
 format: 
   warwickpres-revealjs: default
 ---
-
-```{=html}
-<!-- need to do this for other callout types -->
-<!-- tint80 for border, tint20 (or maybe tint10) for title -->
-<style type="text/css">
-div.callout-note {
-  border-left-color: #336695 !important;
-}
-
-div.callout-note.callout-style-default .callout-title {
-  background-color: #CCD9E4 !important;
-}
-</style>
-```
 
 ## Introduction
 
@@ -51,8 +38,6 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 
 - The inline code and link colours change when the inverse class is applied.
 - I wouldn't recommend using inverse class for a slide with this much text though.
-
-
 
 
 ## Code
@@ -95,12 +80,9 @@ ggplot(diamonds[sample(nrow(diamonds), 1000), ], aes(carat, price)) +
   # theme_warwick()
 ```
 
-
-## Where to edit the theme/see available classes
-
 ## Callouts {.smaller70}
 
-TODO: Figure out how to change colours on the callouts. See [discussion](https://github.com/quarto-dev/quarto-cli/discussions/4755).
+There are custom colours for callouts: 
 
 :::{.callout-note}
 A note
@@ -121,6 +103,8 @@ This is a good idea
 :::{.callout-caution}
 Be careful about doing this
 :::
+
+These require a raw html chunk at the end of the presentation .qmd file (included in template).
 
 # Non-Warwick-specific nice-to-haves {.inverse}
 
@@ -157,3 +141,54 @@ There are classes to help size text by a given percentage:
 ## More Information
 
 You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
+
+## How to edit the theme/see available classes
+
+```{=html}
+<!-- needs to be last chunk of presentation otherwise creates an extra slide -->
+<!-- tint80 for border, tint20 for title -->
+<!-- this should hopefully no longer be necessary in Quarto 1.4 -->
+<!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
+<style type="text/css">
+div.callout-note {
+  border-left-color: #336695 !important;
+}
+
+div.callout-note.callout-style-default .callout-title {
+  background-color: #CCD9E4 !important;
+}
+
+div.callout-caution {
+  border-left-color: #AE4240 !important;
+}
+
+div.callout-caution.callout-style-default .callout-title {
+  background-color: #ebd0cf !important;
+}
+
+div.callout-tip {
+  border-left-color: #618157 !important;
+}
+
+div.callout-tip.callout-style-default .callout-title {
+  background-color: #d8e0d5 !important;
+}
+
+div.callout-important {
+  border-left-color: #775781 !important;
+}
+
+div.callout-important.callout-style-default .callout-title {
+  background-color: #ddd5e0 !important;
+}
+
+div.callout-warning {
+  border-left-color: #956133 !important;
+}
+
+div.callout-warning.callout-style-default .callout-title {
+  background-color: #e4d8cc !important;
+}
+</style>
+```
+
