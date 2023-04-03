@@ -5,9 +5,21 @@ date: last-modified
 date-format: long
 format: 
   warwickpres-revealjs: default
-#theme: [default, _extensions/warwickpres/custom.scss]
-echo: true
 ---
+
+```{=html}
+<!-- need to do this for other callout types -->
+<!-- tint80 for border, tint20 (or maybe tint10) for title -->
+<style type="text/css">
+div.callout-note {
+  border-left-color: #336695 !important;
+}
+
+div.callout-note.callout-style-default .callout-title {
+  background-color: #CCD9E4 !important;
+}
+</style>
+```
 
 ## Introduction
 
@@ -17,8 +29,13 @@ This is a Quarto presentation format that is consistent with The University of W
 It is *not*, however, a University of Warwick branded presentation in the sense that it does not feature the university logo, nor has it been officially signed-off by whoever would need to sign-off such things.
 :::
 
+:::{.notes}
+Speaker notes go here.
+:::
 
 # inverse class for section headings {.inverse}
+
+## inverse class is also useful for stressing *key points*. {.inverse .center-h .center .larger125}
 
 ## Colours
 
@@ -33,15 +50,17 @@ There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.inverse}`.
 There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
 
 - The inline code and link colours change when the inverse class is applied.
+- I wouldn't recommend using inverse class for a slide with this much text though.
 
 
-## inverse class is also useful for stressing key points {.inverse .center-h .center}
+
 
 ## Code
 
 The extension includes a custom syntax highlighting theme:
 
 ```{r}
+#| echo: true
 #| eval: false
 library(dplyr)
 library(palmerpenguins)
@@ -130,6 +149,10 @@ There are classes to help size text by a given percentage:
 
 [`{.larger125}`]{.larger125}, [`{.larger150}`]{.larger150}, [`{.larger175}`]{.larger175}, 
 [`{.larger200}`]{.larger200}, [`{.larger250}`]{.larger250}
+
+## TODO
+
+- Maybe take some ideas from? [kakashi](https://github.com/malcolmbarrett/kakashi-quarto-theme) theme
 
 ## More Information
 

@@ -8,5 +8,6 @@ contributes:
       theme: [default, custom.scss]
       highlight-style: warwickpres80.theme
       slide-number: true
+      callout-icon: false
       title-slide-attributes:
         data-background-color: "#552D62"
