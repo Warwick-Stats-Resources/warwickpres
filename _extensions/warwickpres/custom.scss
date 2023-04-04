@@ -85,6 +85,7 @@ $presentation-font-size-root: 32px;
 $code-block-font-size: .55em;
 $presentation-heading-font: Lato, Helvetica, sans-serif !default;
 //$presentation-heading-color: $ruby;
+$body-color: $gray120;
 $link-color: $sky70;
 $code-color: $ruby80;
 
@@ -219,7 +220,7 @@ pre.sourceCode {
 
 // inverse
 // with credit/thanks to Emil Hvidfeldt
-// https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
+// adapted from https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
 
 .inverse {
   color: $gray05;

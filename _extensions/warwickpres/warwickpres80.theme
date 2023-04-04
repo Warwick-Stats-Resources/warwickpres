@@ -5,7 +5,7 @@
     "line-number-background-color": null,
     "text-styles": {
         "Normal": {
-            "text-color": "#212129"
+            "text-color": "#2E2E2F"
         },
         "Other": {
             "text-color": "#494957",
@@ -85,7 +85,7 @@
             "underline": false
         },
         "Variable": {
-            "text-color": "#212129",
+            "text-color": "#2E2E2F",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -211,7 +211,7 @@
             "underline": false
         },
         "Keyword": {
-            "text-color": "#212129",
+            "text-color": "#2E2E2F",
             "background-color": null,
             "bold": false,
             "italic": false,
