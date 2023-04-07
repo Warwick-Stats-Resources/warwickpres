@@ -17,7 +17,7 @@ contributes:
           fig.align: "center"
           fig.show: "hold"
     revealjs:
-      theme: [default, custom.scss]
+      theme: [default, warwickpres.scss]
       highlight-style: warwickpres.theme
       slide-number: true
       callout-icon: false
