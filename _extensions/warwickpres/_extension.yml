@@ -23,3 +23,6 @@ contributes:
       callout-icon: false
       title-slide-attributes:
         data-background-color: "#552D62"
+      preview-links: auto
+      link-external-newwindow: true
+      
