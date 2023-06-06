@@ -146,6 +146,7 @@ You can learn more about controlling the appearance of RevealJS output here: <ht
 
 ```{=html}
 <!-- needs to be last chunk of presentation otherwise creates an extra slide -->
+<!-- requires Quarto v1.3 -->
 <!-- tint80 for border, tint20 for title -->
 <!-- this should hopefully no longer be necessary in Quarto 1.4 -->
 <!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
