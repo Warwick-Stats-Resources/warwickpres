@@ -113,11 +113,14 @@ div.callout-warning {
 }
 
 // code
+
 pre.sourceCode {
   border-radius: 0;
   border-left-color: $gray;
-//  font-size: .7em;
+  //font-size: .8em;
 }
+
+
 
 // title-slide
 
@@ -151,6 +154,10 @@ pre.sourceCode {
 
 .right {
   text-align: right;  
+}
+
+p {
+  padding-bottom: 12px;
 }
 
 .cell {
