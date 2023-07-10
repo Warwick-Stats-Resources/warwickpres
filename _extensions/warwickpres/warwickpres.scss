@@ -225,6 +225,14 @@ p {
     border-color: $gray20;
 }
 
+kbd {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px 9px;
+  background: linear-gradient(178deg, #fff, #fff, #fff, #ddd);
+}
+
 // inverse
 // with credit/thanks to Emil Hvidfeldt
 // adapted from https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
