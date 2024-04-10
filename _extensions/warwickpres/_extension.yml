@@ -18,7 +18,7 @@ contributes:
           fig.show: "hold"
     revealjs:
       theme: [default, warwickpres.scss]
-      highlight-style: warwickpres.theme
+      highlight-style: warwickpres85.theme
       slide-number: true
       callout-icon: false
       title-slide-attributes:
