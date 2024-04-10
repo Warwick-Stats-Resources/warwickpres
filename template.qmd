@@ -152,43 +152,43 @@ You can learn more about controlling the appearance of RevealJS output here: <ht
 <!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
 <style type="text/css">
 div.callout-note {
-  border-left-color: #336695 !important;
+  border-left-color: #265D8E !important;
 }
 
 div.callout-note.callout-style-default .callout-title {
-  background-color: #CCD9E4 !important;
+  background-color: #D9E2EB !important;
 }
 
 div.callout-caution {
-  border-left-color: #AE4240 !important;
+  border-left-color: #A93634 !important;
 }
 
 div.callout-caution.callout-style-default .callout-title {
-  background-color: #ebd0cf !important;
+  background-color: #F0DCDB !important;
 }
 
 div.callout-tip {
-  border-left-color: #618157 !important;
+  border-left-color: #335D27 !important;
 }
 
 div.callout-tip.callout-style-default .callout-title {
-  background-color: #d8e0d5 !important;
+  background-color: #DBE2D9 !important;
 }
 
 div.callout-important {
-  border-left-color: #775781 !important;
+  border-left-color: #6F4D7A !important;
 }
 
 div.callout-important.callout-style-default .callout-title {
-  background-color: #ddd5e0 !important;
+  background-color: #E6E0E7 !important;
 }
 
 div.callout-warning {
-  border-left-color: #956133 !important;
+  border-left-color: #8E5826 !important;
 }
 
 div.callout-warning.callout-style-default .callout-title {
-  background-color: #e4d8cc !important;
+  background-color: #EBE1D9 !important;
 }
 </style>
 ```
