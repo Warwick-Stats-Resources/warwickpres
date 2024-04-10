@@ -22,7 +22,7 @@
             "underline": false
         },
         "SpecialString": {
-            "text-color": "#3A622D",
+            "text-color": "#0F4001",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -43,7 +43,7 @@
             "underline": false
         },
         "String": {
-            "text-color": "#3A622D",
+            "text-color": "#0F4001",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -120,7 +120,7 @@
             "underline": false
         },
         "VerbatimString": {
-            "text-color": "#3A622D",
+            "text-color": "#0F4001",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -148,7 +148,7 @@
             "underline": false
         },
         "Char": {
-            "text-color": "#3A622D",
+            "text-color": "#0F4001",
             "background-color": null,
             "bold": false,
             "italic": false,
