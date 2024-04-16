@@ -17,12 +17,13 @@ contributes:
           fig.align: "center"
           fig.show: "hold"
     revealjs:
-      theme: [default, warwickpres.scss]
-      highlight-style: warwickpres85.theme
+      theme: [default, warwickpres_brand.scss]
+      highlight-style: warwickpres_brand_dark.theme
       slide-number: true
       callout-icon: false
       title-slide-attributes:
-        data-background-color: "#552D62"
+#        data-background-color: "#552D62"
+        data-background-color: "#3C1053"
       preview-links: auto
       link-external-newwindow: true
       

@@ -1,6 +1,6 @@
 ---
 title: A University of Warwick Themed Presentation
-subtitle: TODO - maybe add Warwick logo to title page?
+subtitle: Subtitle
 author: Your Name
 date: last-modified
 date-format: long
@@ -10,7 +10,7 @@ format:
 
 ## Introduction
 
-This is a Quarto presentation format that is consistent with The University of Warwick's [ID7 branding](https://id7.warwick.ac.uk) (especially [colours](https://id7.warwick.ac.uk/components/colour-palette/) and [font](https://warwick.ac.uk/services/its/servicessupport/web/sitebuilder2/id7/faqs/fonts/)).
+This is a Quarto presentation format that is consistent with The University of Warwick's [branding](https://warwick.ac.uk/about/brand/) (especially [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [font](https://warwick.ac.uk/about/brand/brand-guidelines/typography/)).
 
 :::{.callout-note}
 It is *not*, however, a University of Warwick branded presentation in the sense that it does not feature the university logo, nor has it been officially signed-off by whoever would need to sign-off such things.
@@ -22,7 +22,9 @@ Speaker notes go here.
 
 # inverse class for section headings {.inverse}
 
-## inverse class is also useful for stressing *key points*. {.inverse .center-h .center .larger125}
+## {.inverse .center-h .center .larger125}
+
+inverse class is also useful for stressing *key points*. 
 
 ## Colours
 
@@ -152,43 +154,43 @@ You can learn more about controlling the appearance of RevealJS output here: <ht
 <!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
 <style type="text/css">
 div.callout-note {
-  border-left-color: #265D8E !important;
+  border-left-color: #41748D !important;
 }
 
 div.callout-note.callout-style-default .callout-title {
-  background-color: #D9E2EB !important;
+  background-color: #C6D4DD !important;
 }
 
 div.callout-caution {
-  border-left-color: #A93634 !important;
+  border-left-color: #9D2235 !important;
 }
 
 div.callout-caution.callout-style-default .callout-title {
-  background-color: #F0DCDB !important;
+  background-color: #E2BDC2 !important;
 }
 
 div.callout-tip {
-  border-left-color: #335D27 !important;
+  border-left-color: #507F70 !important;
 }
 
 div.callout-tip.callout-style-default .callout-title {
-  background-color: #DBE2D9 !important;
+  background-color: #CAD9D4 !important;
 }
 
 div.callout-important {
-  border-left-color: #6F4D7A !important;
+  border-left-color: #D69A2D !important;
 }
 
 div.callout-important.callout-style-default .callout-title {
-  background-color: #E6E0E7 !important;
+  background-color: #F4E1C0 !important;
 }
 
 div.callout-warning {
-  border-left-color: #8E5826 !important;
+  border-left-color: #BE531C !important;
 }
 
 div.callout-warning.callout-style-default .callout-title {
-  background-color: #EBE1D9 !important;
+  background-color: #ECCABA !important;
 }
 </style>
 ```
