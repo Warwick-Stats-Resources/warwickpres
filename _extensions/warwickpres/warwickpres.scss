@@ -29,6 +29,7 @@ $teal_dark: #507F70;
 $orange_dark: #BE531C;
 $gold_dark: #D69A2D;
 
+$blue_mid: #0090AF; // 15% shade of $blue_bright
 
 $gray: #58595B;
 $gray_dark: #383838;
@@ -52,7 +53,7 @@ $code-block-font-size: .7em;
 $presentation-heading-font: Lato, Helvetica, sans-serif !default;
 //$presentation-heading-color: $ruby;
 $body-color: $gray_dark;
-$link-color: $blue_bright;
+$link-color: $blue_mid;
 $code-color: $ruby_bright;
 
 /*

@@ -39,8 +39,6 @@ There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.inverse}`.
 There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
 
 - The inline code and link colours change when the inverse class is applied.
-- I wouldn't recommend using inverse class for a slide with this much text though.
-
 
 ## Code
 
