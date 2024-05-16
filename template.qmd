@@ -73,6 +73,7 @@ penguins %>%
 TODO: expand on the link between the theme and {warwickplots}, once finished (include adding `theme_warwick()`, giving link to warwickplots repo). Also, split out code and output (tabset?) on this slide.
 
 ```{r}
+#| eval: false
 library(warwickplots)
 library(ggplot2)
 ggplot(diamonds[sample(nrow(diamonds), 1000), ], aes(carat, price)) +
@@ -82,7 +83,7 @@ ggplot(diamonds[sample(nrow(diamonds), 1000), ], aes(carat, price)) +
   # theme_warwick()
 ```
 
-## Callouts {.smaller70}
+## Callouts {.smaller60}
 
 There are custom colours for callouts: 
 
@@ -106,7 +107,8 @@ This is a good idea
 Be careful about doing this
 :::
 
-These require a raw html chunk at the end of the presentation .qmd file (included in template).
+These require a raw html chunk at the end of the presentation .qmd file (included in template). Callouts do **not** look good on the inverse background.
+
 
 # Non-Warwick-specific nice-to-haves {.inverse}
 
@@ -154,44 +156,43 @@ You can learn more about controlling the appearance of RevealJS output here: <ht
 <!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
 <style type="text/css">
 div.callout-note {
-  border-left-color: #41748D !important;
+  border-left-color: #00A9CE !important;
 }
 
 div.callout-note.callout-style-default .callout-title {
-  background-color: #C6D4DD !important;
-}
-
-div.callout-caution {
-  border-left-color: #9D2235 !important;
-}
-
-div.callout-caution.callout-style-default .callout-title {
-  background-color: #E2BDC2 !important;
-}
-
-div.callout-tip {
-  border-left-color: #507F70 !important;
-}
-
-div.callout-tip.callout-style-default .callout-title {
-  background-color: #CAD9D4 !important;
-}
-
-div.callout-important {
-  border-left-color: #D69A2D !important;
-}
-
-div.callout-important.callout-style-default .callout-title {
-  background-color: #F4E1C0 !important;
+  background-color: #B3E5F0 !important;
 }
 
 div.callout-warning {
-  border-left-color: #BE531C !important;
+  border-left-color: #CB333B !important;
 }
 
 div.callout-warning.callout-style-default .callout-title {
-  background-color: #ECCABA !important;
+  background-color: #EEC3C3 !important;
+}
+
+div.callout-tip {
+  border-left-color: #6DCDB8 !important;
+}
+
+div.callout-tip.callout-style-default .callout-title {
+  background-color: #D3F0EB !important;
+}
+
+div.callout-important {
+  border-left-color: #F1BE48 !important;
+}
+
+div.callout-important.callout-style-default .callout-title {
+  background-color: #FAECC8 !important;
+}
+
+div.callout-caution {
+  border-left-color: #E87722 !important;
+}
+
+div.callout-caution.callout-style-default .callout-title {
+  background-color: #F8D5BC !important;
 }
 </style>
 ```
-
