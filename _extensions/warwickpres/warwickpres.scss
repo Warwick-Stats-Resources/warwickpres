@@ -10,6 +10,8 @@ $font-family-monospace: "Fira Mono", monospace;
 $headings-font-family: Lato, Helvetica, sans-serif !default;
 
 //  Warwick colors 
+// not using all of these, but keep for reference 
+// in case we want to change elements of the theme later
 $aubergine: #3C1053;
 $aubergine85: #59346d;
 $aubergine70: #775887; 
@@ -32,44 +34,30 @@ $gold_dark: #D69A2D;
 $blue_mid: #0090AF; // 15% shade of $blue_bright
 
 $gray: #58595B;
-$gray_dark: #383838;
+$gray_dark: #383838; // this is text colour used on main Warwick site
 $black: #000000;
 $gray20: #cccccc; // % of black
 $gray10: #e6e6e6; // % of black
 $gray05: #f2f2f2; // % of black
 $white: #ffffff;
 
-/*
-$gray120: #2E2E2F;
-$gray140: #222323;
-$gray160: #171718;
-$gray180: #0B0C0C;
-*/
-
 $primary:       $aubergine !default;
 
 $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
 $presentation-heading-font: Lato, Helvetica, sans-serif !default;
-//$presentation-heading-color: $ruby;
 $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
 
 /*
-// Doesn't work in Quarto 1.3, hopefully will fixed in 1.4
+// Doesn't work in Quarto 1.3 or 1.4, hopefully will be fixed in 1.5
 // need to use an inline raw html block directly in hte qmd file
-$callout-color-note: $sky85;
-$callout-color-important: $ruby85;
-$callout-color-tip: $green85;
-$callout-color-caution: $aubergine85;
-$callout-color-warning: $russet85;
-*/
-
-/*
-div.callout-warning {
-  border-color-left: $russet85 !important;
-}
+$callout-color-note: $blue_bright;
+$callout-color-important: $gold_bright;
+$callout-color-tip: $teal_bright;
+$callout-color-caution: $orange_bright;
+$callout-color-warning: $ruby_bright;
 */
 
 /*-- scss:rules --*/
@@ -80,14 +68,11 @@ div.callout-warning {
 }
 
 // code
-
 pre.sourceCode {
   border-radius: 0;
   border-left-color: $gray;
   //font-size: .8em;
 }
-
-
 
 // title-slide
 
@@ -182,6 +167,7 @@ p {
 .larger250 {
   font-size: 250%;
 }
+
 // figure caption
 .reveal .slide figure>figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch+p.caption {
   font-size: 0.5em;
@@ -193,6 +179,8 @@ p {
     border-color: $gray20;
 }
 
+
+// keyboard
 kbd {
   border: 1px solid #aaa;
   border-radius: 4px;
