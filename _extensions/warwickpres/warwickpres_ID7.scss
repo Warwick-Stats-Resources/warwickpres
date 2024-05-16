@@ -10,40 +10,54 @@ $font-family-monospace: "Fira Mono", monospace;
 $headings-font-family: Lato, Helvetica, sans-serif !default;
 
 //  Warwick colors 
-$aubergine: #3C1053;
-$aubergine85: #59346d;
-$aubergine70: #775887; 
-$aubergine50: #9e88a9;
-$aubergine30: #c5b7cb;
-$aubergine15: #e2dbe5;
+$aubergine: #552D62;
+$aubergine85: #6F4D7A;
+$aubergine70: #886C91; //ID7 secondary
+$aubergine50: #AA96B1;
+$aubergine30: #CCC0D0;
+$aubergine15: #E6E0E7;
 
-$ruby_bright: #CB333B;
-$blue_bright: #00A9CE;
-$teal_bright: #6DCDB8;
-$orange_bright: #E87722;
-$gold_bright: #F1BE48;
+$ruby: #9A1310;
+$ruby85: #A93634;
+$ruby70: #B85A58; //ID7 secondary
+$ruby50: #CD8988;
+$ruby30: #E1B8B7;
+$ruby15: #F0DCDB;
 
-$ruby_dark: #9D2235;
-$blue_dark: #41748D;
-$teal_dark: #507F70;
-$orange_dark: #BE531C;
-$gold_dark: #D69A2D;
+$sky: #00407A;
+$sky85: #265D8E;
+$sky70: #4D79A2; //ID7 secondary
+$sky50: #80a0bd;
+$sky30: #B3C6D7;
+$sky15: #D9E2EB;
 
+$green: #0F4001;
+$green85: #335D27;
+$green70: #57794D; //ID7 secondary
+$green50: #87A080;
+$green30: #B7C6B3;
+$green15: #DBE2D9;
 
-$gray: #58595B;
-$gray_dark: #383838;
-$black: #000000;
-$gray20: #cccccc; // % of black
-$gray10: #e6e6e6; // % of black
-$gray05: #f2f2f2; // % of black
-$white: #ffffff;
+// extra color (complement of $sky)
+$russet: #7A3A00;
+$russet85: #8E5826;
+$russet70: #A2754D; //ID7 secondary
+$russet50: #BD9D80;
+$russet30: #D7C4B3;
+$russet15: #EBE1D9;
 
-/*
+$gray: #393A3B;
+$gray85: #575858;
+$gray70: #747576; //paler
+$gray50: #9C9D9D;
+$gray30: #C4C4C4;
+$gray15: #E1E1E2;
+$gray05: #F5F5F5;
+
 $gray120: #2E2E2F;
 $gray140: #222323;
 $gray160: #171718;
 $gray180: #0B0C0C;
-*/
 
 $primary:       $aubergine !default;
 
@@ -51,9 +65,9 @@ $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
 $presentation-heading-font: Lato, Helvetica, sans-serif !default;
 //$presentation-heading-color: $ruby;
-$body-color: $gray_dark;
-$link-color: $blue_dark;
-$code-color: $teal_dark;
+$body-color: $gray120;
+$link-color: $sky70;
+$code-color: $ruby85;
 
 /*
 // Doesn't work in Quarto 1.3, hopefully will fixed in 1.4
@@ -91,13 +105,12 @@ pre.sourceCode {
 // title-slide
 
 #title-slide {
-  color: $white;
+  color: $gray05;
 }
 
 #title-slide .title {
   font-size: 70px;
   padding-bottom: .25em;
-  color: $teal_bright;
 }
 
 #title-slide .subtitle {
@@ -134,7 +147,7 @@ p {
 // headings
 .reveal h2 {
   padding-bottom: 20px;
-  color: $primary;
+  color: $ruby;
 }
 
 // sizes
@@ -189,7 +202,7 @@ p {
 // tables
 .reveal table th, .reveal table td {
     border-bottom: 1px solid;
-    border-color: $gray20;
+    border-color: $gray15;
 }
 
 kbd {
@@ -205,10 +218,10 @@ kbd {
 // adapted from https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
 
 .inverse {
-  color: $white;
+  color: $gray05;
 
   h1, h2, h3 {
-    color: $teal_bright;
+    color: $gray05;
   }
   
   .slide-background-content {
@@ -216,11 +229,11 @@ kbd {
   }
   
   a {
-    color: $blue_bright;
+    color: $sky30;
   }
   
   p code {
-    color: $teal_bright;
+    color: $ruby30;
   }
 }
 
