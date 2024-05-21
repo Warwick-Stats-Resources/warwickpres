@@ -10,10 +10,10 @@ contributes:
           warning: false
           message: false
           dev: "ragg_png"
-          dpi: 320
-          fig.width: 6
-          fig.asp: 0.618
-          fig.retina: 2
+         # dpi: 320
+         # fig.width: 6
+         # fig.asp: 0.618
+         # fig.retina: 2
           fig.align: "center"
           fig.show: "hold"
     revealjs:
