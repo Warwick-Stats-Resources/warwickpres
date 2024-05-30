@@ -1,5 +1,5 @@
 ---
-title: A University of Warwick Themed Presentation
+title: A University of Warwick Presentation
 subtitle: Subtitle
 author: Your Name
 date: last-modified
