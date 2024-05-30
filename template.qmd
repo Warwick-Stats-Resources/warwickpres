@@ -10,10 +10,10 @@ format:
 
 ## Introduction
 
-This is a Quarto presentation format that is consistent with The University of Warwick's [branding](https://warwick.ac.uk/about/brand/) (especially [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [font](https://warwick.ac.uk/about/brand/brand-guidelines/typography/)).
+This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).
 
 :::{.callout-note}
-It is *not*, however, a University of Warwick branded presentation in the sense that it does not feature the university logo, nor has it been officially signed-off by whoever would need to sign-off such things.
+It is *not*, however, a University of Warwick branded presentation, in as much as it doesn't feature the Warwick logo.
 :::
 
 :::{.notes}
@@ -68,17 +68,32 @@ penguins %>%
 
 ## warwickplots
 
-TODO: expand on the link between the theme and {warwickplots}, once finished (include adding `theme_warwick()`, giving link to warwickplots repo). Also, split out code and output (tabset?) on this slide.
+For plotting, the warwickpres extension goes hand-in-hand with the **warwickplots** R package, which provides colour palettes and a ggplot2 theme, `theme_warwick()` that are also consistent with the University of Warwick's branding.
+
+<https://warwick-stats-resources.github.io/warwickplots/>
+
+## warwickplots example
 
 ```{r}
-#| eval: false
-library(warwickplots)
+#| echo: true
+#| output-location: slide
+#| code-line-numbers: "|9,15"
 library(ggplot2)
-ggplot(diamonds[sample(nrow(diamonds), 1000), ], aes(carat, price)) +
-  geom_point(aes(colour = clarity)) +
-  scale_colour_palette_d(warwick_palettes$aubergine) +
-  labs(title = "A plot with a Warwick palette and theme") #+
-  # theme_warwick()
+library(warwickplots)
+library(palmerpenguins)
+
+ggplot(penguins, aes(flipper_length_mm, body_mass_g, group = species)) +
+  geom_point(aes(colour = species, shape = species), 
+             alpha = 0.8, 
+             size = 2) +
+  scale_color_palette_d(warwick_palettes$primary) +
+  labs(title = "Penguin Size, Palmer Station LTER",
+       subtitle = "Flipper length and body mass for **<span style = 'color:#3C1053;'>Adelie</span>**, **<span style = 'color:#6DCDB8;'>Chinstrap</span>** and **<span style = 'color:#CB333B;'>Gentoo</span>** Penguins. This is based on data made available in the **palmerpenguins** R package.",
+       caption = "Visualization: Ella Kaye, Data: Gorman, Williams & Fraser (2014) DOI: 10.1371/journal.pone.009008",
+       x = "flipper length (mm)",
+       y = "body mass (g)") +
+  theme_warwick() +
+  theme(legend.position = 'none')
 ```
 
 ## Callouts {.smaller60}
@@ -136,21 +151,17 @@ There are classes to help size text by a given percentage:
 [`{.larger125}`]{.larger125}, [`{.larger150}`]{.larger150}, [`{.larger175}`]{.larger175}, 
 [`{.larger200}`]{.larger200}, [`{.larger250}`]{.larger250}
 
-## TODO
+## More information
 
-- Maybe take some ideas from? [kakashi](https://github.com/malcolmbarrett/kakashi-quarto-theme) theme
+You can learn more about Quarto Revealjs presentations at <https://quarto.org/docs/presentations/revealjs/>.
 
-## More Information
-
-You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
-
-## How to edit the theme/see available classes
+You can find these slides at <>
 
 ```{=html}
 <!-- needs to be last chunk of presentation otherwise creates an extra slide -->
 <!-- requires Quarto v1.3 -->
 <!-- tint80 for border, tint20 for title -->
-<!-- this should hopefully no longer be necessary in Quarto 1.4 -->
+<!-- this should hopefully no longer be necessary in a future version of Quarto -->
 <!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
 <style type="text/css">
 div.callout-note {
