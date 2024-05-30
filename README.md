@@ -1,8 +1,16 @@
 # warwickpres format
 
-*Currently a work-in-progress, not quite ready for general use.*
+This is a Quarto Revealjs presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/).
 
-This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).
+It offers the following:
+
+- A theme consistent with the University of Warwick's brand [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/), including an inverse class
+- A font (Lato) consistent with the University of Warwick's [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/) guidelines
+- Colours consistent with the brand for quarto callouts
+- A custom syntax highlighting theme consistent with the brand colours
+- Additional convenience classes for sizing and aligning
+
+For plotting, it goes hand-in-hand with the [warwickplots](https://warwick-stats-resources.github.io/warwickplots) package.
 
 ## Installing
 
@@ -12,7 +20,7 @@ quarto use template Warwick-Stats-Resources/warwickpres
 
 This will install the extension and create an example `.qmd` file that you can use as a starting place for your presentation. This also serves as documentation.
 
-### Workflow for using Quarto template in RStudio with git/GitHub/gh-pages
+## Workflow for using Quarto template in RStudio with git/GitHub/gh-pages
 
 I have found it a bit fiddly to get a Quarto template working with RStudio projects.
 The following workflow works well for me. There may be a other/better ways! 
@@ -45,14 +53,10 @@ quarto use template Warwick-Stats-Resources/warwickpres
 
 I have documented an R/RStudio/GitHub workflow because that's what I use. Quarto also works well in other IDEs, especially VSCode, and with other programming languages, so of course feel free to adapt this workflow for your use case.
 
-## Using
-
-*TODO*: Describe how to use your format.
-
-## Format Options
-
-*TODO*: If your format has options that can be set via document metadata, describe them.
-
 ## Example
 
-Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+Here is the source code for a minimal sample document: [template.qmd](template.qmd)
+
+And here it is online: <https://warwick-stats-resources.github.io/warwickpres>
+
+These files together demonstrate what the warwickpres extension offers and how to use it.
