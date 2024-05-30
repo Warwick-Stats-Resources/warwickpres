@@ -20,9 +20,9 @@ quarto use template Warwick-Stats-Resources/warwickpres
 
 This will install the extension and create an example `.qmd` file that you can use as a starting place for your presentation. This also serves as documentation.
 
-## Workflow for using Quarto template in RStudio with git/GitHub/gh-pages
+## Workflow for using this extension in RStudio with git/GitHub/gh-pages
 
-I have found it a bit fiddly to get a Quarto template working with RStudio projects.
+I have found it a bit fiddly to get this working with RStudio projects.
 The following workflow works well for me. There may be a other/better ways! 
 
 Before using this workflow for the first time, check that you have git set up to use 'main' as the default branch.
@@ -48,8 +48,8 @@ quarto use template Warwick-Stats-Resources/warwickpres
 8. You may want to add a README.md at this point. 
 9. Work in the `.qmd` file created in the directory, which will share a name with the directory.
 10. Commit, push, etc as often as you wish!
-11. When the presentation is ready to publish, run `quarto publish gh-pages` in RStudio terminal. This creates a `gh-pages` branch, and the website https://USER.github.io/REPO (where USER is your GItHub username and REPO is the name of the repository).
-12. Keep working in `main` branch. When ready to publish again, run `quarto publish gh-pages`. This brings `gh-pages` branch in sync with `main`. Repeat as often as need be! You could also use a GitHub Action to update the published version on each push, as per this [quarto documentation](https://quarto.org/docs/publishing/github-pages.html#github-action).
+11. When the presentation is ready to publish, run `quarto publish gh-pages` in RStudio terminal. This creates a `gh-pages` branch, and the website https://USER.github.io/REPO (where USER is your GitHub username and REPO is the name of the repository).
+12. Keep working in `main` branch. When ready to publish again, run `quarto publish gh-pages`. This brings `gh-pages` branch in sync with `main`. Repeat as often as need be. You could also use a GitHub Action to update the published version on each push, as per this [quarto documentation](https://quarto.org/docs/publishing/github-pages.html#github-action).
 
 I have documented an R/RStudio/GitHub workflow because that's what I use. Quarto also works well in other IDEs, especially VSCode, and with other programming languages, so of course feel free to adapt this workflow for your use case.
 
