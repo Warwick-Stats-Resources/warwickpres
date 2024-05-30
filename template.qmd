@@ -68,9 +68,16 @@ penguins %>%
 
 ## warwickplots
 
-For plotting, the warwickpres extension goes hand-in-hand with the **warwickplots** R package, which provides colour palettes and a ggplot2 theme, `theme_warwick()` that are also consistent with the University of Warwick's branding.
+For plotting, the warwickpres extension goes hand-in-hand with the **warwickplots** R package, which provides colour palettes and a ggplot2 theme, `theme_warwick()`, that are also consistent with the University of Warwick's branding.
 
 <https://warwick-stats-resources.github.io/warwickplots/>
+
+```{r}
+#| echo: false
+library(warwickplots)
+plot(warwick_palettes)
+```
+
 
 ## warwickplots example
 
@@ -153,9 +160,11 @@ There are classes to help size text by a given percentage:
 
 ## More information
 
-You can learn more about Quarto Revealjs presentations at <https://quarto.org/docs/presentations/revealjs/>.
+You can learn more about Quarto Revealjs presentations at <https://quarto.org/docs/presentations/revealjs/>
 
-You can find these slides at <>
+You can learn more about Quarto extensions at <https://quarto.org/docs/extensions/>
+
+You can find these slides at <https://warwick-stats-resources.github.io/warwickpres/>
 
 ```{=html}
 <!-- needs to be last chunk of presentation otherwise creates an extra slide -->
