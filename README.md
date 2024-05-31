@@ -4,6 +4,7 @@ This is a Quarto Revealjs presentation format that is consistent with The Univer
 
 It offers the following:
 
+- The University of Warwick logo on the title slide
 - A theme consistent with the University of Warwick's brand [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/), including an inverse class
 - A font (Lato) consistent with the University of Warwick's [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/) guidelines
 - Colours consistent with the brand for quarto callouts
