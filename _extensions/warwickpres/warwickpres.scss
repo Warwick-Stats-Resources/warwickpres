@@ -213,3 +213,7 @@ kbd {
   }
 }
 
+// don't show page number on title-page
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
