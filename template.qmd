@@ -5,15 +5,27 @@ author: Your Name
 date: last-modified
 date-format: long
 format: 
-  warwickpres-revealjs: default
+  warwickpres-revealjs: 
+    title-slide-attributes: 
+      data-background-image: warwick-logo-white.png
+      data-background-size: 15%
+      data-background-position: 100% 0%
+### To remove the logo from the title page, 
+### delete lines 7-12 above and uncomment the two lines below
+#format:
+#  warwickpres-revealjs: default
 ---
 
 ## Introduction
 
 This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).
 
+It also features the University of Warwick logo on the title slide.
+
+. . .
+
 :::{.callout-note}
-It is *not*, however, a University of Warwick branded presentation, in as much as it doesn't feature the Warwick logo.
+To remove the logo from the title slide, delete the replace lines 7-12 of this `.qmd` file and uncomment lines 15-16.
 :::
 
 :::{.notes}
@@ -127,7 +139,7 @@ This is a good idea
 Be careful about doing this
 :::
 
-These require a raw html chunk at the end of the presentation .qmd file (included in template). Callouts do **not** look good on the inverse background.
+These require a raw html chunk at the end of the presentation `.qmd` file (included in template). Callouts do **not** look good on the inverse background.
 
 
 # Non-Warwick-specific nice-to-haves {.inverse}
