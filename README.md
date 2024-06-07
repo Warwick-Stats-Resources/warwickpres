@@ -11,9 +11,11 @@ It offers the following:
 - A custom syntax highlighting theme consistent with the brand colours
 - Additional convenience classes for sizing and aligning
 
-For plotting, it goes hand-in-hand with the [warwickplots](https://warwick-stats-resources.github.io/warwickplots) package.
+For plotting, it goes hand-in-hand with [warwickplots](https://warwick-stats-resources.github.io/warwickplots), an R package with colour palettes and a ggplot2 theme that are consistent with The University of Warwick’s branding.
 
-## Installing
+Users of warwickpres may also be interested in [warwickcourse](https://github.com/warwick-stats-resources/warwickcourse), a quarto template for University of Warwick branded course/workshop websites.
+
+## Installing warwickpres
 
 ```bash
 quarto use template Warwick-Stats-Resources/warwickpres
@@ -24,7 +26,7 @@ This will install the extension and create an example `.qmd` file that you can u
 ## Workflow for using this extension in RStudio with git/GitHub/gh-pages
 
 I have found it a bit fiddly to get this working with RStudio projects.
-The following workflow works well for me. There may be a other/better ways! 
+The following workflow works well for me. There may be a other/better ways.
 
 Before using this workflow for the first time, check that you have git set up to use 'main' as the default branch.
 
@@ -42,7 +44,7 @@ quarto use template Warwick-Stats-Resources/warwickpres
 ```
 
 4. In RStudio Files pane, navigate to the directory just created
-5. The directory should contain a .Rproj file named after the template. Click on that to launch the project.
+5. The directory should contain a warwickpres.Rproj. Click on that to launch the project.
     - If you have lots of directories from the same extension, may want to rename the .Rproj file to something unique, e.g. to share the directory name (to make file search easier)
 6. In the RStudio console, run `usethis::use_git()` and follow through the prompts.
 7. After restarting as prompted, run `usethis::use_github()`
