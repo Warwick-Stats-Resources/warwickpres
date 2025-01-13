@@ -15,7 +15,7 @@ contributes:
       theme: [default, warwickpres.scss]
       highlight-style: warwickpres_shade15.theme
       slide-number: true
-      callout-icon: false
+      callout-icon: true
       title-slide-attributes:
         data-background-color: "#3C1053"
       preview-links: auto

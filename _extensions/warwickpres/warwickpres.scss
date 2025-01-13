@@ -50,17 +50,33 @@ $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
 
-/*
-// Doesn't work in Quarto 1.3 or 1.4, hopefully will be fixed in 1.5
-// need to use an inline raw html block directly in hte qmd file
+
 $callout-color-note: $blue_bright;
-$callout-color-important: $gold_bright;
+$callout-color-caution: $gold_bright;
 $callout-color-tip: $teal_bright;
-$callout-color-caution: $orange_bright;
-$callout-color-warning: $ruby_bright;
-*/
+$callout-color-warning: $orange_bright;
+$callout-color-important: $ruby_bright;
+
 
 /*-- scss:rules --*/
+.reveal .callout {
+  .callout-title {
+    //min-height: 2em;
+    display: flex;
+    align-items: center;
+    //padding: 0.5rem 0.5rem;
+    
+    .callout-icon-container {
+      margin-right: 0.1rem;  // Add space after the icon
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      align-self: center;
+    }
+  }
+}
 
 // color classes
 .primary {
