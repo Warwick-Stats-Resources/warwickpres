@@ -260,7 +260,7 @@ kbd {
 
   // white icons so they show up against dark title
   .callout-icon::before {
-    filter: brightness(0) invert(1) !important;
+    filter: brightness(0) invert(1);
   }
 
   /*
