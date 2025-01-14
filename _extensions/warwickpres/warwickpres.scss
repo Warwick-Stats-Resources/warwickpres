@@ -50,21 +50,24 @@ $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
 
+/*-- scss:rules --*/
 
+// callouts 
 $callout-color-note: $blue_bright;
 $callout-color-caution: $gold_bright;
 $callout-color-tip: $teal_bright;
 $callout-color-warning: $orange_bright;
 $callout-color-important: $ruby_bright;
 
-
-/*-- scss:rules --*/
+/*
+Correct the alignment and spacing of the title in the callouts 
+so they look like the Quarto defaults.
+Other CSS changes override them otherwise. 
+*/
 .reveal .callout {
   .callout-title {
-    //min-height: 2em;
     display: flex;
     align-items: center;
-    //padding: 0.5rem 0.5rem;
     
     .callout-icon-container {
       margin-right: 0.1rem;  // Add space after the icon
@@ -133,7 +136,6 @@ p {
   padding-bottom: 20px;
 }
 
-// headings
 // headings
 .reveal h2, .reveal h3 {
   color: $primary;
@@ -235,6 +237,45 @@ kbd {
   p code {
     color: $gold_bright;
   }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: $blue_dark !important;
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: $gold_dark !important;
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: $ruby_dark !important;
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: $teal_dark !important;
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: $orange_dark !important;
+  }
+
+  // white icons so they show up against dark title
+  .callout-icon::before {
+    filter: brightness(0) invert(1) !important;
+  }
+
+  /*
+  try changing colour of callout content background, but issue with margin that would be fiddly to sort
+  div.callout.callout-note.callout-titled.callout-style-default > div > div.callout-content {
+    background-color: grey;
+  }
+  */
+
+  // just changing title (against ligher background, if not specifying title background color
+  /*
+  div.callout-style-default .callout-title {
+    color: $gray_dark;
+  }
+  */
 }
 
 // don't show page number on title-page

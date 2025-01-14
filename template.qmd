@@ -139,7 +139,30 @@ This is a good idea
 Be careful about doing this
 :::
 
-Callouts do **not** look good on the inverse background.
+
+## Callouts {.smaller60 .inverse}
+
+There are custom colours for callouts: 
+
+:::{.callout-note}
+A note
+:::
+
+:::{.callout-warning}
+A warning
+:::
+
+:::{.callout-important}
+Something important
+:::
+
+:::{.callout-tip}
+This is a good idea
+:::
+
+:::{.callout-caution}
+Be careful about doing this
+:::
 
 
 # Non-Warwick-specific nice-to-haves {.inverse}
