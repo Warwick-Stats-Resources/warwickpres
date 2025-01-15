@@ -31,6 +31,10 @@ $teal_dark: #507F70;
 $orange_dark: #BE531C;
 $gold_dark: #D69A2D;
 
+$teal_light: #C4EBE4;  //teal 40%
+$ruby_light: #EFC2C4;  // ruby 30%
+$aubergine_light: $aubergine30;
+
 $blue_mid: #0090AF; // 15% shade of $blue_bright
 
 $gray: #58595B;
@@ -58,6 +62,47 @@ $callout-color-caution: $gold_bright;
 $callout-color-tip: $teal_bright;
 $callout-color-warning: $orange_bright;
 $callout-color-important: $ruby_bright;
+
+// Create a map using color names
+$colors: (
+  'teal-light': $teal_light,
+  'ruby-light': $ruby_light,
+  'aubergine-light': $aubergine_light,
+  'ruby-dark': $ruby-dark,
+  'blue-dark': $blue_dark,
+  'teal-dark': $teal_dark
+);
+
+// mixin for boxes with height parameter
+@mixin box-style($height: 450px) {  // 450px is default value
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: $height;
+}
+
+// Generate styles for each box
+@each $name, $color in $colors {
+  .col-box-#{$name} {
+    @include box-style;  // uses default height
+    background: $color;
+  }
+  
+  // Create a tall variant
+  .col-box-#{$name}-tall {
+    @include box-style(550px);  
+    background: $color;
+  }
+
+  // Create a short variant
+  // two shorts with 10px gap stack to same height as tall 
+  .col-box-#{$name}-short {
+    @include box-style(270px);  
+    background: $color;
+  }
+}
 
 /*
 Correct the alignment and spacing of the title in the callouts 

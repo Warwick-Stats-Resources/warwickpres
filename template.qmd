@@ -164,6 +164,69 @@ This is a good idea
 Be careful about doing this
 :::
 
+## Columns with backgrounds
+
+::: {columns}
+::: {.column .col-box-aubergine-light width="32%"}
+Box 1
+
+Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-aubergine-light`
+:::
+
+::: {.column .col-box-teal-light width="32%"}
+Box 2
+
+Default height is 450px
+:::
+
+::: {.column .col-box-ruby-light width="32%"}
+Box 3
+:::
+:::
+
+## Columns with backgrounds: tall and short
+
+::::: {columns}
+:::: {.column .col-box-aubergine-light-tall width="49%"}
+Colour box styling can be applied to entire columns
+
+This column has class `.col-box-aubergine-light-tall`
+::::
+
+:::: {.column width="49%"}
+:::{.col-box-ruby-light-short}
+Or to divs within columns to create stacks
+:::
+
+:::{.col-box-teal-light-short}
+This div has class `.col-box-teal-light-short`
+:::
+
+::::
+
+:::::
+
+## Columns with backgrounds: tall and short {.inverse}
+
+::::: {columns}
+:::: {.column .col-box-blue-dark-tall width="49%"}
+Colour box styling can be applied to entire columns
+
+This column has class `.col-box-blue-dark-tall`
+::::
+
+:::: {.column width="49%"}
+:::{.col-box-teal-dark-short}
+Or to divs within columns to create stacks
+:::
+
+:::{.col-box-ruby-dark-short}
+This div has class `.col-box-ruby-dark-short`
+:::
+
+::::
+
+:::::
 
 # Non-Warwick-specific nice-to-haves {.inverse}
 
