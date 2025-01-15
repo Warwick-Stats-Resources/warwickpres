@@ -20,4 +20,7 @@ contributes:
         data-background-color: "#3C1053"
       preview-links: auto
       link-external-newwindow: true
-      
+      width: 1280
+      height: 720
+      keep-md: false
+      embed-resources: true      
