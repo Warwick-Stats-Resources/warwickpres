@@ -4,16 +4,11 @@ subtitle: Subtitle
 author: Your Name
 date: last-modified
 date-format: long
-format: 
-  warwickpres-revealjs: 
-    title-slide-attributes: 
-      data-background-image: warwick-logo-white.png
-      data-background-size: 15%
-      data-background-position: 100% 0%
-### To remove the logo from the title page, 
-### delete lines 7-12 above and uncomment the two lines below
-#format:
-#  warwickpres-revealjs: default
+footer: <https://warwick-stats-resources.github.io>
+format:
+  warwickpres-revealjs: default
+# to remove logo from title slide, comment out the `data-background-image` line 
+# in `_extension/warwickpres/_extension.yml`
 ---
 
 ## Introduction
@@ -139,8 +134,94 @@ This is a good idea
 Be careful about doing this
 :::
 
-These require a raw html chunk at the end of the presentation `.qmd` file (included in template). Callouts do **not** look good on the inverse background.
 
+## Callouts {.smaller60 .inverse}
+
+There are custom colours for callouts: 
+
+:::{.callout-note}
+A note
+:::
+
+:::{.callout-warning}
+A warning
+:::
+
+:::{.callout-important}
+Something important
+:::
+
+:::{.callout-tip}
+This is a good idea
+:::
+
+:::{.callout-caution}
+Be careful about doing this
+:::
+
+## Columns with backgrounds
+
+::: {columns}
+::: {.column .col-box-aubergine-light width="32%"}
+Box 1
+
+Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-aubergine-light`
+:::
+
+::: {.column .col-box-teal-light width="32%"}
+Box 2
+
+Default height is 450px
+:::
+
+::: {.column .col-box-ruby-light width="32%"}
+Box 3
+:::
+:::
+
+## Columns with backgrounds: tall and short
+
+::::: {columns}
+:::: {.column .col-box-aubergine-light-tall width="49%"}
+Colour box styling can be applied to entire columns
+
+This column has class `.col-box-aubergine-light-tall`
+::::
+
+:::: {.column width="49%"}
+:::{.col-box-ruby-light-short}
+Or to divs within columns to create stacks
+:::
+
+:::{.col-box-teal-light-short}
+This div has class `.col-box-teal-light-short`
+:::
+
+::::
+
+:::::
+
+## Columns with backgrounds: tall and short {.inverse}
+
+::::: {columns}
+:::: {.column .col-box-blue-dark-tall width="49%"}
+Colour box styling can be applied to entire columns
+
+This column has class `.col-box-blue-dark-tall`
+::::
+
+:::: {.column width="49%"}
+:::{.col-box-teal-dark-short}
+Or to divs within columns to create stacks
+:::
+
+:::{.col-box-ruby-dark-short}
+This div has class `.col-box-ruby-dark-short`
+:::
+
+::::
+
+:::::
 
 # Non-Warwick-specific nice-to-haves {.inverse}
 
@@ -177,52 +258,3 @@ You can learn more about Quarto Revealjs presentations at <https://quarto.org/do
 You can learn more about Quarto extensions at <https://quarto.org/docs/extensions/>
 
 You can find these slides at <https://warwick-stats-resources.github.io/warwickpres/>
-
-```{=html}
-<!-- needs to be last chunk of presentation otherwise creates an extra slide -->
-<!-- requires Quarto v1.3 -->
-<!-- tint80 for border, tint20 for title -->
-<!-- this should hopefully no longer be necessary in a future version of Quarto -->
-<!-- https://github.com/quarto-dev/quarto-cli/issues/5038 -->
-<style type="text/css">
-div.callout-note {
-  border-left-color: #00A9CE !important;
-}
-
-div.callout-note.callout-style-default .callout-title {
-  background-color: #B3E5F0 !important;
-}
-
-div.callout-warning {
-  border-left-color: #CB333B !important;
-}
-
-div.callout-warning.callout-style-default .callout-title {
-  background-color: #EEC3C3 !important;
-}
-
-div.callout-tip {
-  border-left-color: #6DCDB8 !important;
-}
-
-div.callout-tip.callout-style-default .callout-title {
-  background-color: #D3F0EB !important;
-}
-
-div.callout-important {
-  border-left-color: #F1BE48 !important;
-}
-
-div.callout-important.callout-style-default .callout-title {
-  background-color: #FAECC8 !important;
-}
-
-div.callout-caution {
-  border-left-color: #E87722 !important;
-}
-
-div.callout-caution.callout-style-default .callout-title {
-  background-color: #F8D5BC !important;
-}
-</style>
-```
