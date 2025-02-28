@@ -4,6 +4,7 @@ subtitle: Subtitle
 author: Your Name
 date: last-modified
 date-format: long
+footer: <https://warwick-stats-resources.github.io>
 format: 
   warwickpres-revealjs: 
     title-slide-attributes: 
