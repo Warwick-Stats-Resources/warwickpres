@@ -12,7 +12,7 @@ format:
       data-background-size: 15%
       data-background-position: 100% 0%
 ### To remove the logo from the title page, 
-### delete lines 7-12 above and uncomment the two lines below
+### delete lines 8-13 above and uncomment the two lines below
 #format:
 #  warwickpres-revealjs: default
 ---
