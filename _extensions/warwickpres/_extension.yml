@@ -28,4 +28,5 @@ contributes:
       keep-md: false
       embed-resources: true 
       format-resources:
-        - fonts
+        #- fonts
+        - offline_fonts.R
