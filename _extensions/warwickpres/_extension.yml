@@ -26,4 +26,6 @@ contributes:
       width: 1280
       height: 720
       keep-md: false
-      embed-resources: true      
+      embed-resources: true 
+      format-resources:
+        - fonts
