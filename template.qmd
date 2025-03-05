@@ -47,7 +47,7 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 
 - The inline code and link colours change when the inverse class is applied.
 
-## Fonts
+## Offline fonts
 
 The extension contains local font files for offline use, 
 but they are not made available by default.
@@ -55,10 +55,10 @@ but they are not made available by default.
 To use them:
 
 - render your presentation at least once
-- an "offline_fonts.R" script will then appear in the root of your directory
-- in the R console, run `source("offline_fonts.R")''
+- an `"offline_fonts.R"` script will then appear in the root of your directory
+- in the R console, run `source("offline_fonts.R")`
 - render the presentation again
-- a "fonts" directory will then appear in your root directory, and you can use the fonts offline.
+- a `"fonts"` directory will then appear in your root directory, and are available offline.
 
 ## Code
 

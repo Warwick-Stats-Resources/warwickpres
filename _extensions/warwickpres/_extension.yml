@@ -1,6 +1,6 @@
 title: University of Warwick Presentation
 author: Ella Kaye
-version: 2.0.0
+version: 3.0.0
 quarto-required: ">=1.6.0"
 contributes:
   formats:
@@ -30,4 +30,3 @@ contributes:
       format-resources:
         #- fonts
         - offline_fonts.R
-        
