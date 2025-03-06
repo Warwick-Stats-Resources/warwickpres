@@ -8,7 +8,7 @@ footer: <https://warwick-stats-resources.github.io>
 format:
   warwickpres-revealjs: default
 # to remove logo from title slide, comment out the `data-background-image` line 
-# in `_extension/warwickpres/_extension.yml`
+# in `_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml`
 ---
 
 ```{r}
