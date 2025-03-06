@@ -16,9 +16,11 @@ format:
 #| eval: false
 
 # To set up offline fonts:
-# 1. render once (with eval: false) so that "offline_fonts.R" appears in root directory
+# 1. render once (with `eval: false` for this chunk), 
+#    so that "offline_fonts.R" appears in root directory
 # 2. set `eval: true` in this chunk and render once to set up offline fonts
-# 3. then set back to false (or delete chunk)
+#    (or, run this cell once)
+# 3. then set back to `eval: false` (or delete chunk)
 source("offline_fonts.R")
 ```
 
@@ -74,7 +76,7 @@ or:
 
 - set `eval: true` in the first chunk of this presentation (with `label: offline-fonts`) 
 - re-render the presentation (or run the chunk)
-- then set back to `eval: false` (or delete chunk).
+- then set back to `eval: false` (or delete chunk)
 
 ## Code
 
