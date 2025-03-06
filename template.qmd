@@ -61,10 +61,10 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 
 ## Offline fonts
 
-The extension contains local font files for offline use, 
-but they are not made available by default.
+The extension contains local font files for offline use.
 
-To use them render this presentation once, so that `"offline_fonts.R"` appears in root directory.
+To use them, first render this presentation once, 
+so that `"offline_fonts.R"` appears in root directory.
 
 Then either:
 
@@ -72,7 +72,9 @@ Then either:
 
 or: 
 
-- set `eval: true` in the first chunk of this presentation (with `#| label: offline-fonts`) and run once, then set back to `eval: false` (or delete chunk).
+- set `eval: true` in the first chunk of this presentation (with `label: offline-fonts`) 
+- re-render the presentation (or run the chunk)
+- then set back to `eval: false` (or delete chunk).
 
 ## Code
 
