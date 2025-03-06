@@ -15,8 +15,10 @@ format:
 #| label: offline-fonts
 #| eval: false
 
-# Set `eval: true` and render once to set up offline fonts
-# Then set back to false (or delete chunk)
+# To set up offline fonts:
+# 1. render once (with eval: false) so that "offline_fonts.R" appears in root directory
+# 2. set `eval: true` in this chunk and render once to set up offline fonts
+# 3. then set back to false (or delete chunk)
 source("offline_fonts.R")
 ```
 
@@ -61,9 +63,14 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 The extension contains local font files for offline use, 
 but they are not made available by default.
 
-To use them either:
+To use them render this presentation once, so that `"offline_fonts.R"` appears in root directory.
 
-- call `source("offline_fonts.R")` once in the R console, or
+Then either:
+
+- call `source("offline_fonts.R")` once in the R console
+
+or: 
+
 - set `eval: true` in the first chunk of this presentation (with `#| label: offline-fonts`) and run once, then set back to `eval: false` (or delete chunk).
 
 ## Code
