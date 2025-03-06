@@ -31,7 +31,8 @@ It also features the University of Warwick logo on the title slide.
 . . .
 
 :::{.callout-note}
-To remove the logo from the title slide, delete the replace lines 7-12 of this `.qmd` file and uncomment lines 15-16.
+To remove logo from title slide, comment out the `data-background-image` line 
+in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
 :::
 
 :::{.notes}
