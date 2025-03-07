@@ -7,8 +7,9 @@ date-format: long
 footer: <https://warwick-stats-resources.github.io>
 format:
   warwickpres-revealjs: default
-# to remove logo from title slide, comment out the `data-background-image` line 
-# in `_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml`
+# To remove logo from title slide, comment out line 21 
+# in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
+# (`data-background-image: warwick-logo-white.png`)
 ---
 
 ```{r}
@@ -33,8 +34,9 @@ It also features the University of Warwick logo on the title slide.
 . . .
 
 :::{.callout-note}
-To remove logo from title slide, comment out the `data-background-image` line 
+To remove logo from title slide, **comment out** line 21 
 in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
+(`data-background-image: warwick-logo-white.png`)
 :::
 
 :::{.notes}
@@ -64,8 +66,7 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 ## Offline fonts
 
 The extension contains local font files for offline use.
-
-To use them, first render this presentation once, 
+To use them, **first render this presentation once**, 
 so that `"offline_fonts.R"` appears in root directory.
 
 Then either:
@@ -77,6 +78,8 @@ or:
 - set `eval: true` in the first chunk of this presentation (with `label: offline-fonts`) 
 - re-render the presentation (or run the chunk)
 - then set back to `eval: false` (or delete chunk)
+
+The `"fonts"` directory will then appear in the root directory.
 
 ## Code
 
