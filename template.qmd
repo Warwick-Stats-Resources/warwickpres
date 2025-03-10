@@ -12,19 +12,6 @@ format:
 # (`data-background-image: warwick-logo-white.png`)
 ---
 
-```{r}
-#| label: offline-fonts
-#| eval: false
-
-# To set up offline fonts:
-# 1. render once (with `eval: false` for this chunk), 
-#    so that "offline_fonts.R" appears in root directory
-# 2. set `eval: true` in this chunk and render once to set up offline fonts
-#    (or, run this cell once)
-# 3. then set back to `eval: false` (or delete chunk)
-source("offline_fonts.R")
-```
-
 ## Introduction
 
 This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).
@@ -66,20 +53,19 @@ There's also a colour for short [links](https://github.com/Warwick-Stats-Resourc
 ## Offline fonts
 
 The extension contains local font files for offline use.
-To use them, **first render this presentation once**, 
-so that `"offline_fonts.R"` appears in root directory.
 
-Then either:
+To use them:
 
-- call `source("offline_fonts.R")` once in the R console
+- open `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
+- in line 16, swap `online_fonts.css` for `offline_fonts.css`
+- uncomment lines 31 and 32:
 
-or: 
+  ```
+  format-resources: 
+    - offline_fonts
+  ```
 
-- set `eval: true` in the first chunk of this presentation (with `label: offline-fonts`) 
-- re-render the presentation (or run the chunk)
-- then set back to `eval: false` (or delete chunk)
-
-The `"fonts"` directory will then appear in the root directory.
+The `offline_fonts` directory will then appear in the root directory the next time you render the presentation, and the fonts will be available offline.
 
 ## Code
 
