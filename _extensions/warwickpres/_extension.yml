@@ -13,7 +13,7 @@ contributes:
           fig.show: "hold"
     revealjs:
       theme: [default, warwickpres.scss] 
-      css: [online_fonts.css] # or offline_fonts
+      css: [online_fonts.css] # online_fonts.css or offline_fonts.css
       highlight-style: warwickpres_shade15.theme
       slide-number: true
       callout-icon: true
