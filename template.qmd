@@ -12,19 +12,6 @@ format:
 # (`data-background-image: warwick-logo-white.png`)
 ---
 
-```{r}
-#| label: offline-fonts
-#| eval: false
-
-# To set up offline fonts:
-# 1. render once (with `eval: false` for this chunk), 
-#    so that "offline_fonts.R" appears in root directory
-# 2. set `eval: true` in this chunk and render once to set up offline fonts
-#    (or, run this cell once)
-# 3. then set back to `eval: false` (or delete chunk)
-source("offline_fonts.R")
-```
-
 ## Introduction
 
 This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).

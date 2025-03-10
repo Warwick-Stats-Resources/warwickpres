@@ -12,7 +12,8 @@ contributes:
           fig.align: "center"
           fig.show: "hold"
     revealjs:
-      theme: [default, warwickpres.scss]
+      theme: [default, warwickpres.scss] 
+      css: [online_fonts.css] # or offline_fonts
       highlight-style: warwickpres_shade15.theme
       slide-number: true
       callout-icon: true
@@ -26,7 +27,6 @@ contributes:
       width: 1280
       height: 720
       keep-md: false
-      embed-resources: true 
-      format-resources:
-        #- fonts
-        - offline_fonts.R
+      embed-resources: true
+#      format-resources:  # uncomment this and following line for offline fonts
+#        - offline_fonts
