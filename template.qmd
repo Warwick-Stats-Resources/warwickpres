@@ -7,9 +7,9 @@ date-format: long
 footer: <https://warwick-stats-resources.github.io>
 format:
   warwickpres-revealjs: default
-# To remove logo from title slide, comment out line 21 
-# in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
-# (`data-background-image: warwick-logo-white.png`)
+# To remove logo from title slide, comment out the following line in
+# in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`: 
+#   `data-background-image: warwick-logo-white.png`
 ---
 
 ## Introduction
@@ -21,9 +21,10 @@ It also features the University of Warwick logo on the title slide.
 . . .
 
 :::{.callout-note}
-To remove logo from title slide, **comment out** line 21 
-in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
-(`data-background-image: warwick-logo-white.png`)
+To remove logo from title slide, **comment out** the following line in
+in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`:
+
+`data-background-image: warwick-logo-white.png`
 :::
 
 :::{.notes}
