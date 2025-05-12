@@ -49,7 +49,6 @@ $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
 
-// IMPORTANT: Define callout colors in scss:defaults section
 $callout-color-note: $blue_bright;
 $callout-color-caution: $gold_bright;
 $callout-color-tip: $teal_bright;
@@ -177,7 +176,7 @@ p {
 
 // headings - ensure these rules are not being overridden
 .reveal h2, .reveal h3 {
-  color: $primary !important;
+  color: $primary;
 }
 
 .reveal h2 {
@@ -257,7 +256,7 @@ kbd {
   color: $white;
 
   h1, h2, h3 {
-    color: $teal_bright !important;
+    color: $teal_bright;
     
     code {
       color: $gold_bright;
