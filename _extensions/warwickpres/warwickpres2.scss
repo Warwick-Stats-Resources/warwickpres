@@ -49,55 +49,20 @@ $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
 
-/*-- scss:rules --*/
+
+
+
+// color classes
+.primary {
+  color: $primary;
+}
 
 // callouts 
-$callout-color-note: $blue_bright;
-$callout-color-caution: $gold_bright;
-$callout-color-tip: $teal_bright;
-$callout-color-warning: $orange_bright;
-$callout-color-important: $ruby_bright;
-
-// Create a map using color names
-$colors: (
-  'teal-light': $teal_light,
-  'ruby-light': $ruby_light,
-  'aubergine-light': $aubergine_light,
-  'ruby-dark': $ruby-dark,
-  'blue-dark': $blue_dark,
-  'teal-dark': $teal_dark
-);
-
-// mixin for boxes with height parameter
-@mixin box-style($height: 450px) {  // 450px is default value
-  border-radius: 25px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  height: $height;
-}
-
-// Generate styles for each box
-@each $name, $color in $colors {
-  .col-box-#{$name} {
-    @include box-style;  // uses default height
-    background: $color;
-  }
-  
-  // Create a tall variant
-  .col-box-#{$name}-tall {
-    @include box-style(550px);  
-    background: $color;
-  }
-
-  // Create a short variant
-  // two shorts with 10px gap stack to same height as tall 
-  .col-box-#{$name}-short {
-    @include box-style(270px);  
-    background: $color;
-  }
-}
+$callout-color-note: $blue_bright; 
+$callout-color-caution: $orange_bright; 
+$callout-color-tip: $teal_bright; 
+$callout-color-warning: $gold_bright; 
+$callout-color-important: $ruby_bright; 
 
 /*
 Correct the alignment and spacing of the title in the callouts 
@@ -120,139 +85,6 @@ Other CSS changes override them otherwise.
     }
   }
 }
-
-// color classes
-.primary {
-  color: $primary;
-}
-
-// code
-pre.sourceCode {
-  border-radius: 0;
-  border-left-color: $gray;
-  //font-size: .8em;
-}
-
-// title-slide
-#title-slide {
-  color: $white;
-}
-
-#title-slide .title {
-  font-size: 70px;
-  padding-bottom: .25em;
-  color: $teal_bright;
-}
-
-#title-slide .subtitle {
-  margin-bottom: 6rem;
-}
-
-.reveal .quarto-title-block .quarto-title-authors {
-  display: block;
-}
-
-.reveal .quarto-title-block .quarto-title-authors .quarto-title-author {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0.5em;
-}
-
-// alignment and spacing
-.center-h {
-  text-align: center;
-}
-
-.right {
-  text-align: right;  
-}
-
-p {
-  padding-bottom: 12px;
-}
-
-.cell {
-  padding-bottom: 20px;
-}
-
-// headings
-.reveal h2, .reveal h3 {
-  color: $primary;
-}
-
-.reveal h2 {
-  padding-bottom: 20px;
-}
-
-// sizes
-.smaller90 {
-  font-size: 90%;
-}
-
-.smaller80 {
-  font-size: 80%;
-}
-
-.smaller75 {
-  font-size: 75%;
-}
-
-.smaller70 {
-  font-size: 70%;
-}
-
-.smaller60 {
-  font-size: 60%;
-}
-
-.smaller50 {
-  font-size: 50%;
-}
-
-.larger125 {
-  font-size: 125%;
-}
-
-.larger150 {
-  font-size: 150%;
-}
-
-.larger175 {
-  font-size: 175%;
-}
-
-.larger200 {
-  font-size: 200%;
-}
-
-.larger250 {
-  font-size: 250%;
-}
-
-// figure caption
-.reveal .slide figure>figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch+p.caption {
-  font-size: 0.5em;
-}
-
-// tables
-.reveal table th, .reveal table td {
-    border-bottom: 1px solid;
-    border-color: $gray20;
-}
-
-
-// keyboard
-kbd {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 5px 9px;
-  background: linear-gradient(178deg, #fff, #fff, #fff, #ddd);
-}
-
-// inverse
-// with credit/thanks to Emil Hvidfeldt
-// adapted from https://github.com/EmilHvitfeldt/quarto-revealjs-inverse
 
 .inverse {
   color: $white;
@@ -317,7 +149,43 @@ kbd {
   */
 }
 
-// don't show page number on title-page
-.reveal .slide-number > a[href*='title-slide'] {
-  display: none;
+// Create a map using color names
+$colors: (
+  'teal-light': $teal_light,
+  'ruby-light': $ruby_light,
+  'aubergine-light': $aubergine_light,
+  'ruby-dark': $ruby-dark,
+  'blue-dark': $blue_dark,
+  'teal-dark': $teal_dark
+);
+
+// mixin for boxes with height parameter
+@mixin box-style($height: 450px) {  // 450px is default value
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: $height;
+}
+
+// Generate styles for each box
+@each $name, $color in $colors {
+  .col-box-#{$name} {
+    @include box-style;  // uses default height
+    background: $color;
+  }
+  
+  // Create a tall variant
+  .col-box-#{$name}-tall {
+    @include box-style(550px);  
+    background: $color;
+  }
+
+  // Create a short variant
+  // two shorts with 10px gap stack to same height as tall 
+  .col-box-#{$name}-short {
+    @include box-style(270px);  
+    background: $color;
+  }
 }
