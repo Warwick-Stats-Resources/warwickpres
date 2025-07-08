@@ -76,21 +76,20 @@ The extension includes a custom syntax highlighting theme:
 #| echo: true
 #| eval: false
 library(dplyr)
-library(palmerpenguins)
 
 penguins %>%
   mutate(
     long_flipper = case_when(
-      species == "Adelie" & flipper_length_mm > 195 ~ TRUE,
-      species == "Chinstrap" & flipper_length_mm > 200 ~ TRUE,
-      species == "Gentoo" & flipper_length_mm > 225 ~ TRUE,
+      species == "Adelie" & flipper_len > 195 ~ TRUE,
+      species == "Chinstrap" & flipper_len > 200 ~ TRUE,
+      species == "Gentoo" & flipper_len > 225 ~ TRUE,
       TRUE ~ FALSE
     )
   ) %>%
   mutate(
-    body_mass_kg = body_mass_g / 1000,
-    bill_length_cm = bill_length_mm / 10,
-    bill_depth_cm = bill_depth_mm / 10
+    body_mass_kg = body_mass / 1000,
+    bill_len_cm = bill_len / 10,
+    bill_dep_cm = bill_dep / 10
   )
 ```
 
@@ -112,12 +111,11 @@ plot(warwick_palettes)
 ```{r}
 #| echo: true
 #| output-location: slide
-#| code-line-numbers: "|9,15"
+#| code-line-numbers: "|8,14"
 library(ggplot2)
 library(warwickplots)
-library(palmerpenguins)
 
-ggplot(penguins, aes(flipper_length_mm, body_mass_g, group = species)) +
+ggplot(penguins, aes(flipper_len, body_mass, group = species)) +
   geom_point(aes(colour = species, shape = species), 
              alpha = 0.8, 
              size = 2) +
