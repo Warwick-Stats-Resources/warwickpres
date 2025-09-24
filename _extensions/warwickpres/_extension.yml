@@ -20,7 +20,7 @@ contributes:
       slide-number: true
       callout-icon: true
       title-slide-attributes:
-        data-background-color: "#3C1053"
+        data-background-color: "#A499F4"
         data-background-image: warwick-logo-white.png
         data-background-size: 15%
         data-background-position: 100% 0%

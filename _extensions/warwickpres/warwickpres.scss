@@ -6,13 +6,20 @@ $font-family-sans-serif: Arial, sans-serif !default;
 $font-family-monospace: "Fira Mono", monospace;
 $headings-font-family: Arial, sans-serif !default;
 
-//  Warwick colors 
+// Warwick colors 
 $lavendar: #A499F4;
 $purple: #440379;
 $coral: #F1977F; 
 $blue: #6CB7FF;
 $green: #51D7C1;
 $yellow: #FEDE7B;
+
+// Darker versions (30% or 40% or brand colours)
+$lavendar-dark: #625C92;
+$coral-dark: #794C40; 
+$blue-dark: #416E99;
+$green-dark: #318174;
+$yellow-dark: #7F6F3E;
 
  // this is text colour used on main Warwick site
 $black: #0C0C0C;
@@ -26,8 +33,8 @@ $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
 $presentation-heading-font: $headings-font-family;
 $body-color: $black;
-$link-color: $blue; // CHANGE
-$code-color: $green; // CHANGE
+$link-color: $blue-dark; // CHANGE
+$code-color: $lavendar-dark; // CHANGE
 
 $callout-color-note: $blue;
 $callout-color-caution: $coral;
@@ -209,62 +216,3 @@ kbd {
   display: none;
 }
 
-// inverse
-.inverse {
-  color: $white;
-
-  h1, h2, h3 {
-    color: $yellow;
-    
-    code {
-      color: $coral;
-    }
-  }
-  
-  .slide-background-content {
-    background-color: $purple;
-  }
-  
-  a {
-    color: $blue;
-  }
-  
-  p code {
-    color: $coral;
-  }
-  
-  // Inverse callout backgrounds
-  /*
-  div.callout-note.callout-style-default .callout-title {
-    background-color: $blue_dark !important;
-  }
-
-  div.callout-warning.callout-style-default .callout-title {
-    background-color: $gold_dark !important;
-  }
-
-  div.callout-important.callout-style-default .callout-title {
-    background-color: $ruby_dark !important;
-  }
-
-  div.callout-tip.callout-style-default .callout-title {
-    background-color: $teal_dark !important;
-  }
-
-  div.callout-caution.callout-style-default .callout-title {
-    background-color: $orange_dark !important;
-  }
-  
-  // white icons in inverse mode
-  .callout-icon::before {
-    filter: brightness(0) invert(1);
-  }
-  */
-}
-
-// CRITICAL: This overrides callout title colors in inverse slides
-/*
-.inverse .callout-title p { 
-  color: $white !important; 
-}
-*/
