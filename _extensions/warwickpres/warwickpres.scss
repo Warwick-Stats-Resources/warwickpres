@@ -1,8 +1,10 @@
 /*-- scss:defaults --*/
 
-$font-family-sans-serif: Lato, Helvetica, sans-serif !default;
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+$font-family-sans-serif: Arial, sans-serif !default;
 $font-family-monospace: "Fira Mono", monospace;
-$headings-font-family: Lato, Helvetica, sans-serif !default;
+$headings-font-family: Arial, sans-serif !default;
 
 //  Warwick colors 
 $aubergine: #3C1053;
@@ -42,7 +44,7 @@ $primary: $aubergine !default;
 
 $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
-$presentation-heading-font: Lato, Helvetica, sans-serif !default;
+$presentation-heading-font: $headings-font-family;
 $body-color: $gray_dark;
 $link-color: $blue_mid;
 $code-color: $ruby_bright;
