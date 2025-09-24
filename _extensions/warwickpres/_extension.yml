@@ -16,7 +16,7 @@ contributes:
         code-overflow: wrap
     revealjs:
       theme: warwickpres.scss
-      highlight-style: warwickpres_shade15.theme
+      highlight-style: warwickpres.theme
       slide-number: true
       callout-icon: true
       title-slide-attributes:
