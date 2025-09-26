@@ -14,18 +14,22 @@ $blue: #6CB7FF;
 $green: #51D7C1;
 $yellow: #FEDE7B;
 
-// Darker versions (30% or 40% or brand colours)
+$black: #0C0C0C;
+$gray-mid: #9E9E9E;
+$gray-light: #CECECE;
+$white: #FDFCFC;
+
+// Different shades 
+$purple-bright: #693594;
+$blue-dark: #4C80B3;
+/*
 $lavendar-dark: #625C92;
 $coral-dark: #794C40; 
 $blue-dark: #416E99;
 $green-dark: #318174;
 $yellow-dark: #7F6F3E;
+*/
 
- // this is text colour used on main Warwick site
-$black: #0C0C0C;
-$gray-mid: #9E9E9E;
-$gray-light: #CECECE; // % of black
-$white: #FFFFFF;
 
 $primary: $lavendar !default;
 
@@ -33,8 +37,8 @@ $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
 $presentation-heading-font: $headings-font-family;
 $body-color: $black;
-$link-color: $blue-dark; // CHANGE
-$code-color: $lavendar-dark; // CHANGE
+$link-color: $blue-dark; 
+$code-color: $purple-bright; // with $purple, not quite enough differentiation from black 
 
 $callout-color-note: $blue;
 $callout-color-caution: $coral;
