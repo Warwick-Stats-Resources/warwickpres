@@ -43,12 +43,31 @@ Or stressing **key points**
 
 # Coral background {.coral-bg}
 
-## Colours
+## Text highlights
+
+Hightlight key words with a `.{color}` class, where `color` is one of: 
+
+- [lavendar]{.lavendar}
+- [coral]{.coral}
+- [green]{.green}
+- [blue]{.blue}
+- [yellow]{.yellow}
+
+## Additional colours
 
 There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.lavendar-bg}`.
 
 There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
 
+## Typography
+
+The University of Warwick brand font is **Neue Haas Grotesk**, which is available as part of Adobe Creative Suite.
+
+The preferred substitute font is **Aptos**, which is available in Microsoft apps.
+
+Neither of these are freely available for use with Quarto.
+
+This format therefore uses Warwick's final approved substitute font: **Arial**.
 
 ## Code
 
@@ -76,7 +95,7 @@ penguins %>%
 ```
 
 
-## Callouts {.smaller60}
+## Callouts {.smaller90}
 
 There are custom colours for callouts: 
 
@@ -103,31 +122,32 @@ Be careful about doing this
 
 ## Columns with backgrounds
 
+Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-lavendar`
+
 ::: {columns}
 ::: {.column .col-box-lavendar width="32%"}
-Box 1
-
-Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-lavendar`
-:::
-
-::: {.column .col-box-green width="32%"}
-Box 2
+Box 1: lavendar
 
 Default height is 450px
 :::
 
+::: {.column .col-box-green width="32%"}
+Box 2: green
+
+:::
+
 ::: {.column .col-box-blue width="32%"}
-Box 3
+Box 3: blue
 :::
 :::
 
 ## Columns with backgrounds: tall and short
 
 ::::: {columns}
-:::: {.column .col-box-lavendar-tall width="49%"}
+:::: {.column .col-box-green-tall width="49%"}
 Colour box styling can be applied to entire columns
 
-This column has class `.col-box-aubergine-light-tall`
+This has height 600px and class `.col-box-green-tall`
 ::::
 
 :::: {.column width="49%"}
@@ -136,7 +156,7 @@ Or to divs within columns to create stacks
 :::
 
 :::{.col-box-yellow-short}
-This div has class `.col-box-teal-light-short`
+This div has height 300px and class `.col-box-yellow-short`
 :::
 
 ::::

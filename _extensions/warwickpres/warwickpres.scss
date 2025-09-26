@@ -53,11 +53,16 @@ $colors: (
   'yellow': $yellow,
 );
 
-// color classes for bold text
+// color classes for highlighting text
+@mixin bg($padding: 5px 10px) {
+  font-weight: 700;
+  padding: $padding;
+}
+
 @each $name, $color in $colors {
     .#{$name} {
-        color: $color;
-        font-weight: 700;
+      @include bg;  
+      background-color: $color;
     }
 }
 
