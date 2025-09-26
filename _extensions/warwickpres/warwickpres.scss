@@ -79,6 +79,18 @@ $colors: (
     }
 }
 
+/*
+Keep an inverse class for back-compatibility
+But don't document this.
+Prefer to use a variety of {color}-bg classes as section breaks
+and for stressing important points.
+*/
+.inverse {
+  .slide-background-content {
+    background-color: $lavendar;
+  }  
+}
+
 // mixin for boxes with height parameter
 @mixin box-style($height: 450px) {  // 450px is default value
   border-radius: 25px;
