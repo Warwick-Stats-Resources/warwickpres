@@ -4,16 +4,12 @@ This is a Quarto Revealjs presentation format that is consistent with The Univer
 
 It offers the following:
 
-- The University of Warwick logo on the title slide
-- A theme consistent with the University of Warwick's brand [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/), including an inverse class
-- A font (Lato) consistent with the University of Warwick's [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/) guidelines
-    - local font files which can be used offline 
-    - these not activated by default - see instructions in [template.qmd](template.qmd)
+- The University of Warwick logo on the title slide (pending)
+- A theme consistent with the University of Warwick's brand [colours](https://brand.warwick.ac.uk/en/brand-guidelines/design-elements/#315)
+- Arial font (the brand fonts of Neue Haas Grotesk is not available open-source, nor is the preferred substitute font of Aptos. Arial is the recommended substitute if neither of those are available)
 - Colours consistent with the brand for quarto callouts
 - A custom syntax highlighting theme consistent with the brand colours
 - Additional convenience classes for sizing and aligning
-
-For plotting, it goes hand-in-hand with [warwickplots](https://warwick-stats-resources.github.io/warwickplots), an R package with colour palettes and a ggplot2 theme that are consistent with The University of Warwick’s branding.
 
 Users of warwickpres may also be interested in [warwickcourse](https://github.com/warwick-stats-resources/warwickcourse), a quarto template for University of Warwick branded course/workshop websites.
 
