@@ -7,66 +7,56 @@ date-format: long
 footer: <https://warwick-stats-resources.github.io>
 format:
   warwickpres-revealjs: default
-# To remove logo from title slide, comment out the following line in
-# in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`: 
-#   `data-background-image: warwick-logo-white.png`
 ---
 
 ## Introduction
 
-This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/), especially its [colours](https://warwick.ac.uk/about/brand/brand-guidelines/colours/) and [typography](https://warwick.ac.uk/about/brand/brand-guidelines/typography/).
-
-It also features the University of Warwick logo on the title slide.
+This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://brand.warwick.ac.uk/), especially its [colours](https://brand.warwick.ac.uk/en/brand-guidelines/design-elements/#315) and [typography](https://brand.warwick.ac.uk/en/brand-guidelines/design-elements/#1149).
 
 . . .
 
-:::{.callout-note}
-To remove logo from title slide, **comment out** the following line in
-in `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`:
-
-`data-background-image: warwick-logo-white.png`
-:::
 
 :::{.notes}
 Speaker notes go here.
 :::
 
-# inverse class for section headings {.inverse}
+# Colour backgrounds for new sections {.lavendar-bg}
 
-## {.inverse .center-h .center .larger125}
+## {.green-bg .center-h .center .larger200}
 
-inverse class is also useful for stressing *key points*. 
+Or stressing **key points**
 
-## Colours
+# Blue background {.blue-bg}
 
-There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.inverse}`.
+# Yellow background {.yellow-bg}
+
+# Coral background {.coral-bg}
+
+## Text highlights
+
+Hightlight key words with a `.{color}` class, where `color` is one of: 
+
+- [lavendar]{.lavendar}
+- [coral]{.coral}
+- [green]{.green}
+- [blue]{.blue}
+- [yellow]{.yellow}
+
+## Additional colours
+
+There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.lavendar-bg}`.
 
 There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
 
-## Colours {.inverse}
+## Typography
 
-There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.inverse}`.
+The University of Warwick brand font is **Neue Haas Grotesk**, which is available as part of Adobe Creative Suite.
 
-There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
+The preferred substitute font is **Aptos**, which is available in Microsoft apps.
 
-- The inline code and link colours change when the inverse class is applied.
+Neither of these are freely available for use with Quarto.
 
-## Offline fonts
-
-The extension contains local font files for offline use.
-
-To use them:
-
-- open `"_extensions/Warwick-Stats-Resources/warwickpres/_extension.yml"`
-- in line 16, swap `online_fonts.css` for `offline_fonts.css`
-- uncomment lines 31 and 32:
-
-  ```
-  format-resources: 
-    - offline_fonts
-  ```
-
-The `offline_fonts` directory will then appear in the root directory the next time you render the presentation, and the fonts will be available offline.
+This format therefore uses Warwick's final approved substitute font: **Arial**.
 
 ## Code
 
@@ -93,43 +83,8 @@ penguins %>%
   )
 ```
 
-## warwickplots
 
-For plotting, the warwickpres extension goes hand-in-hand with the **warwickplots** R package, which provides colour palettes and a ggplot2 theme, `theme_warwick()`, that are also consistent with the University of Warwick's branding.
-
-<https://warwick-stats-resources.github.io/warwickplots/>
-
-```{r}
-#| echo: false
-library(warwickplots)
-plot(warwick_palettes)
-```
-
-
-## warwickplots example
-
-```{r}
-#| echo: true
-#| output-location: slide
-#| code-line-numbers: "|8,14"
-library(ggplot2)
-library(warwickplots)
-
-ggplot(penguins, aes(flipper_len, body_mass, group = species)) +
-  geom_point(aes(colour = species, shape = species), 
-             alpha = 0.8, 
-             size = 2) +
-  scale_color_palette_d(warwick_palettes$primary) +
-  labs(title = "Penguin Size, Palmer Station LTER",
-       subtitle = "Flipper length and body mass for **<span style = 'color:#3C1053;'>Adelie</span>**, **<span style = 'color:#6DCDB8;'>Chinstrap</span>** and **<span style = 'color:#CB333B;'>Gentoo</span>** Penguins. This is based on data made available in the **palmerpenguins** R package.",
-       caption = "Visualization: Ella Kaye, Data: Gorman, Williams & Fraser (2014) DOI: 10.1371/journal.pone.009008",
-       x = "flipper length (mm)",
-       y = "body mass (g)") +
-  theme_warwick() +
-  theme(legend.position = 'none')
-```
-
-## Callouts {.smaller60}
+## Callouts {.smaller90}
 
 There are custom colours for callouts: 
 
@@ -153,96 +108,52 @@ This is a good idea
 Be careful about doing this
 :::
 
-
-## Callouts {.smaller60 .inverse}
-
-There are custom colours for callouts: 
-
-:::{.callout-note}
-A note
-:::
-
-:::{.callout-warning}
-A warning
-:::
-
-:::{.callout-important}
-Something important
-:::
-
-:::{.callout-tip}
-This is a good idea
-:::
-
-:::{.callout-caution}
-Be careful about doing this
-:::
 
 ## Columns with backgrounds
 
+Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-lavendar`
+
 ::: {columns}
-::: {.column .col-box-aubergine-light width="32%"}
-Box 1
-
-Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-aubergine-light`
-:::
-
-::: {.column .col-box-teal-light width="32%"}
-Box 2
+::: {.column .col-box-lavendar width="32%"}
+Box 1: lavendar
 
 Default height is 450px
 :::
 
-::: {.column .col-box-ruby-light width="32%"}
-Box 3
+::: {.column .col-box-green width="32%"}
+Box 2: green
+
+:::
+
+::: {.column .col-box-blue width="32%"}
+Box 3: blue
 :::
 :::
 
 ## Columns with backgrounds: tall and short
 
 ::::: {columns}
-:::: {.column .col-box-aubergine-light-tall width="49%"}
+:::: {.column .col-box-green-tall width="49%"}
 Colour box styling can be applied to entire columns
 
-This column has class `.col-box-aubergine-light-tall`
+This has height 600px and class `.col-box-green-tall`
 ::::
 
 :::: {.column width="49%"}
-:::{.col-box-ruby-light-short}
+:::{.col-box-coral-short}
 Or to divs within columns to create stacks
 :::
 
-:::{.col-box-teal-light-short}
-This div has class `.col-box-teal-light-short`
+:::{.col-box-yellow-short}
+This div has height 300px and class `.col-box-yellow-short`
 :::
 
 ::::
 
 :::::
 
-## Columns with backgrounds: tall and short {.inverse}
 
-::::: {columns}
-:::: {.column .col-box-blue-dark-tall width="49%"}
-Colour box styling can be applied to entire columns
-
-This column has class `.col-box-blue-dark-tall`
-::::
-
-:::: {.column width="49%"}
-:::{.col-box-teal-dark-short}
-Or to divs within columns to create stacks
-:::
-
-:::{.col-box-ruby-dark-short}
-This div has class `.col-box-ruby-dark-short`
-:::
-
-::::
-
-:::::
-
-# Non-Warwick-specific nice-to-haves {.inverse}
+# Non-Warwick-specific nice-to-haves {.green-bg}
 
 ## Alignment
 
