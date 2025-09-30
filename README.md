@@ -1,6 +1,6 @@
 # warwickpres format
 
-This is a Quarto Revealjs presentation format that is consistent with The University of Warwick's [brand](https://warwick.ac.uk/about/brand/).
+This is a Quarto Revealjs presentation format that is consistent with The University of Warwick's [brand](https://brand.warwick.ac.uk/).
 
 It offers the following:
 
