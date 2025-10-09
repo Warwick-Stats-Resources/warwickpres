@@ -30,7 +30,6 @@ $green-dark: #318174;
 $yellow-dark: #7F6F3E;
 */
 
-
 $primary: $lavendar !default;
 
 $presentation-font-size-root: 32px;
@@ -188,11 +187,6 @@ p {
 
 .cell {
   padding-bottom: 20px;
-}
-
-// headings - ensure these rules are not being overridden
-.reveal h2, .reveal h3 {
-  color: $purple;
 }
 
 .reveal h2 {
