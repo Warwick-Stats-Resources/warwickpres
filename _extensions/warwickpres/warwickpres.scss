@@ -146,11 +146,13 @@ pre.sourceCode {
 }
 
 // title-slide
-/*
 #title-slide {
-  color: $white;
+  background-image: url('UoW_Wordmark_Positive_RGB.png');
+  background-size: 5%;
+  background-position: 5% 100%
 }
 
+/*
 #title-slide .title {
   font-size: 70px;
   padding-bottom: .25em;
