@@ -5,6 +5,7 @@ quarto-required: ">=1.6.0"
 contributes:
   formats:
     common:
+      favicon: UoW_Favicon_16x16.png
       knitr:
         opts_chunk:
           warning: false
@@ -21,8 +22,8 @@ contributes:
       callout-icon: true
       title-slide-attributes:
         data-background-color: "#A499F4"
-        data-background-image: UoW_Responsive_Crest_Positive_RGB.png
-        data-background-size: 6%
+        data-background-image: UoW_Wordmark_Positive_RGB.png
+        data-background-size: 12%
         data-background-position: 97.5% 5%
       preview-links: auto
       link-external-newwindow: true
@@ -30,3 +31,6 @@ contributes:
       height: 720
       keep-md: false
       embed-resources: true
+include-in-header:
+- text: |
+    <link rel = "favicon" href = "UoW_Favicon_16x16.png" />
