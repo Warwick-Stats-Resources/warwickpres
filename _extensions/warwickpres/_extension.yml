@@ -32,4 +32,4 @@ contributes:
       embed-resources: true
       include-in-header:
         - text: |
-          <link rel = "shortcut icon" href = "UoW_Favicon_16x16.png" />
+            <link rel = "favicon" href = "UoW_Favicon_16x16.png" />
