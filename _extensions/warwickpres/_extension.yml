@@ -31,5 +31,5 @@ contributes:
       keep-md: false
       embed-resources: true
       include-in-header:
-      - text: |
-          <link rel = "favicon" href = "UoW_Favicon_16x16.png" />
+        - text: |
+          <link rel = "shortcut icon" href = "UoW_Favicon_16x16.png" />
