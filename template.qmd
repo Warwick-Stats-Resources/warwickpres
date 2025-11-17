@@ -20,7 +20,7 @@ This is a Quarto presentation format that is consistent with The University of W
 Speaker notes go here.
 :::
 
-# Colour backgrounds for new sections {.lavendar-bg}
+# Colour backgrounds for new sections {.lavender-bg}
 
 ## {.green-bg .center-h .center .larger200}
 
@@ -36,7 +36,7 @@ Or stressing **key points**
 
 Hightlight key words with a `.{color}` class, where `color` is one of: 
 
-- [lavendar]{.lavendar}
+- [lavender]{.lavender}
 - [coral]{.coral}
 - [green]{.green}
 - [blue]{.blue}
@@ -44,7 +44,7 @@ Hightlight key words with a `.{color}` class, where `color` is one of:
 
 ## Additional colours
 
-There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.lavendar-bg}`.
+There's a colour for inline code such as `x <- c(1, 3, 6)` and `{.lavender-bg}`.
 
 There's also a colour for short [links](https://github.com/Warwick-Stats-Resources/warwickpres) and full ones like <https://quarto.org/docs/presentations/revealjs/>.
 
@@ -111,11 +111,11 @@ Be careful about doing this
 
 ## Columns with backgrounds
 
-Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-lavendar`
+Use class `.col-box-{color}` to apply colour box styling, e.g. `.col-box-lavender`
 
 ::: {columns}
-::: {.column .col-box-lavendar width="32%"}
-Box 1: lavendar
+::: {.column .col-box-lavender width="32%"}
+Box 1: lavender
 
 Default height is 450px
 :::

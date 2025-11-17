@@ -7,7 +7,7 @@ $font-family-monospace: "Fira Mono", monospace;
 $headings-font-family: Arial, sans-serif !default;
 
 // Warwick colors 
-$lavendar: #A499F4;
+$lavender: #A499F4;
 $purple: #440379;
 $coral: #F1977F; 
 $blue: #6CB7FF;
@@ -23,14 +23,14 @@ $white: #FDFCFC;
 $purple-bright: #693594;
 $blue-dark: #4C80B3;
 /*
-$lavendar-dark: #625C92;
+$lavender-dark: #625C92;
 $coral-dark: #794C40; 
 $blue-dark: #416E99;
 $green-dark: #318174;
 $yellow-dark: #7F6F3E;
 */
 
-$primary: $lavendar !default;
+$primary: $lavender !default;
 
 $presentation-font-size-root: 32px;
 $code-block-font-size: .7em;
@@ -43,13 +43,13 @@ $callout-color-note: $blue;
 $callout-color-caution: $coral;
 $callout-color-tip: $green;
 $callout-color-warning: $yellow;
-$callout-color-important: $lavendar;
+$callout-color-important: $lavender;
 
 /*-- scss:rules --*/
 
 // Create a map using color names
 $colors: (
-  'lavendar': $lavendar,
+  'lavender': $lavender,
   'coral': $coral,
   'blue': $blue,
   'green': $green,
@@ -86,7 +86,7 @@ and for stressing important points.
 */
 .inverse {
   .slide-background-content {
-    background-color: $lavendar;
+    background-color: $lavender;
   }  
 }
 
