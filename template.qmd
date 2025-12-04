@@ -13,9 +13,6 @@ format:
 
 This is a Quarto presentation format that is consistent with The University of Warwick's [brand](https://brand.warwick.ac.uk/), especially its [colours](https://brand.warwick.ac.uk/en/brand-guidelines/design-elements/#315) and [typography](https://brand.warwick.ac.uk/en/brand-guidelines/design-elements/#1149).
 
-. . .
-
-
 :::{.notes}
 Speaker notes go here.
 :::

@@ -145,6 +145,16 @@ pre.sourceCode {
   border-left-color: $gray-mid;
 }
 
+// diff highlighting - override String/Variable colors for diff blocks
+.sourceCode.diff {
+  .st {  // deletions (mapped to String by Pandoc)
+    color: $coral;
+  }
+  .va {  // additions (mapped to Variable by Pandoc)
+    color: $green;
+  }
+}
+
 // title-slide
 /*
 #title-slide {
